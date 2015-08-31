@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:id="@+id/rel">
+
+    <TextView android:id="@+id/section_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="LOST"
+                android:id="@+id/lost"
+                android:textSize="25sp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="ROSO"
+                android:id="@+id/roso"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:textSize="30sp"
+                android:typeface="serif" />
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sMode"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:max="5"
+                android:layout_marginLeft="20dp"
+                android:progress="4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/tMode"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="LOMC"
+                android:id="@+id/lomc"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:textSize="25sp"
+                android:typeface="serif" />
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sVelo"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:indeterminate="false"
+                android:max="60"
+                android:progress="30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/tVelo"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp" />
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sAng"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:indeterminate="false"
+                android:max="24"
+                android:progress="12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/tAng"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="LORT"
+                android:id="@+id/lort"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:textSize="25sp"
+                android:typeface="serif" />
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sVeloTurn"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:indeterminate="false"
+                android:max="60"
+                android:progress="30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/tVeloTurn"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="LOHO"
+                android:id="@+id/loho"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:typeface="serif" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
